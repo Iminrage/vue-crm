@@ -1,15 +1,21 @@
 import Vue from "vue"
-import VueRouter from "vue-router"
+import Router from "vue-router"
 
-Vue.use(VueRouter);
+Vue.use(Router);
 
-import App from './App.vue'
+import Home from '@/pages/Home.vue'
+import Crm from '@/pages/Crm.vue'
 export default new Router({
 	routes: [
 		{
 			path: '/',
 			name: 'home',
-			component: App
+			component: Home
+		},
+		{
+			path: '/crm',
+			name: 'crm',
+			component: Crm
 		}
 	]
 })
